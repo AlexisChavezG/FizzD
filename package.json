@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "Node ./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlexisChavezG/FizzD/issues"
   },
-  "homepage": "https://github.com/AlexisChavezG/FizzD#readme"
+  "homepage": "https://github.com/AlexisChavezG/FizzD#readme",
+  "dependencies": {
+    "jest": "^28.0.2"
+  }
 }
