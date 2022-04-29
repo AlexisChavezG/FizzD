@@ -2,9 +2,9 @@
   "name": "fizzd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test":"jest"
+    "test": "node ./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
