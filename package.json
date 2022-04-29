@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/AlexisChavezG/FizzD#readme",
   "dependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
