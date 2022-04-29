@@ -3,12 +3,9 @@ const exploService = require('./lib/services/explorerService')
 const explorers = reader.readJsonFile('./explorers.json')
 console.log(explorers)
 console.log('--------------------------------')
-
 const byMision = exploService.filterByMission(explorers,"node")
-console.log(` Lista de exploradores by mision: ${byMision}`)
-
-const byExplorer = exploService.getAmountOfExplorersByMission(explorers,"node")
-console.log(`Exploradores por mision: ${byExplorer}`)
-
-const lisGit = exploService.getExplorersUsernamesByMission(explorers,`node`)
-console.log(`Lista de usuario git ${lisGit}`)
+console.log(byMision)
+const totalMision = exploService.getAmountOfExplorersByMission(explorers,"node")
+console.log(totalMision)
+const explorerByGit = exploService.getExplorersUsernamesByMission(explorers,"node")
+console.log(explorerByGit)
