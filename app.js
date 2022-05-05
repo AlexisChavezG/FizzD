@@ -1,8 +1,6 @@
 const reader = require('./lib/utils/reader')
 const exploService = require('./lib/services/explorerService')
 const explorers = reader.readJsonFile('./explorers.json')
-console.log(explorers)
-console.log('--------------------------------')
 const byMision = exploService.filterByMission(explorers,"node")
 console.log(byMision)
 const totalMision = exploService.getAmountOfExplorersByMission(explorers,"node")
