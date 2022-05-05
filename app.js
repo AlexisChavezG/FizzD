@@ -9,5 +9,6 @@ const totalMision = exploService.getAmountOfExplorersByMission(explorers,"node")
 console.log(totalMision);
 const explorerByGit = exploService.getExplorersUsernamesByMission(explorers,"node");
 console.log(explorerByGit);
+
 const fizzBuz = fizz.applyValidationInExplorer(explorers);
 console.log(fizzBuz);
