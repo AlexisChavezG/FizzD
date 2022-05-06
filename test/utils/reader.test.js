@@ -1,6 +1,6 @@
 const utils = require("../../lib/utils/reader");
 describe("Casos de pruebas",()=>{
-    test("1. Primera funcion",()=>{
+    test("Prueba de lectura de archivo",()=>{
         const explorers = utils.readJsonFile("./explorers.json");
         expect(explorers).toBeDefined();
     });
