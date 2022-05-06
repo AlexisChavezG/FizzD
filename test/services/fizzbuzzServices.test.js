@@ -9,8 +9,15 @@ describe("Casos de pruebas",()=>{
 });
 describe("Casos de pruebas",()=>{
     test("Prueba para validación del mismo trick ",()=>{
-        const explorer3 = {name: "Explorer3", score: 3}
-        const explorers = data.applyValidationInExplorer(explorer3); 
+        const explorer2 = {name: "Explorer2", score: 3}
+        const explorers = data.applyValidationInExplorer(explorer2); 
         expect(explorers.trick).toBe("FIZZ");
+    });
+});
+describe("Casos de pruebas",()=>{
+    test("Prueba para validación del mismo trick ",()=>{
+        const explorer3 = {name: "Explorer3", score: 5}
+        const explorers = data.applyValidationInExplorer(explorer3); 
+        expect(explorers.trick).toBe("BUZZ");
     });
 });
