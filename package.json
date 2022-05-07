@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
+    "server": "node ./lib/server.js",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/AlexisChavezG/FizzD#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "jest": "^26.0.0"
   },
   "devDependencies": {
