@@ -4,6 +4,6 @@ describe("Casos de pruebas",()=>{
     test("1. Primera funcion",()=>{
         const explorers = utils.readJsonFile("./explorers.json");
         const lengt = services.getAmountOfExplorersByMission(explorers,"node");
-        expect(lengt).toBe(10);
+        expect(lengt.cantidad).toBe(10);
     });
 });
